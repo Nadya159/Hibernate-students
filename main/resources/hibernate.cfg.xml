@@ -10,13 +10,12 @@
     <property name="connection.password">erth</property>
     <property name="show_sql">true</property>
     <property name="format_sql">true</property>
-    <!--<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>-->
     <property name="default_schema">public</property>
     <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.connection.characterEncoding">utf8</property>
     <mapping class="by.javaguru.entity.Course"/>
     <mapping class="by.javaguru.entity.Student"/>
-
-    <!-- DB schema will be updated if needed -->
-    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+    <mapping class="by.javaguru.entity.StudentProfile"/>
+    <mapping class="by.javaguru.entity.Trainer"/>
   </session-factory>
 </hibernate-configuration>
